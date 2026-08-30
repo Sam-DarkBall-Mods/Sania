@@ -2,26 +2,26 @@
 
 [![CI](https://github.com/Sam-DarkBall-Mods/Sania/actions/workflows/ci.yml/badge.svg)](https://github.com/Sam-DarkBall-Mods/Sania/actions/workflows/ci.yml)
 
-Portable electronic-warfare system for detecting and disrupting UAVs in Arma 3.
+Sania adds portable Sania and Volnorez UAV jammers. They can be carried in
+bags, placed on the ground, attached to an object, switched between operating
+modes and packed again. A crate is included for mission makers.
 
 ## Requirements
 
 - Arma 3 2.22 or newer
-- Additional runtime dependencies declared by `CfgPatches`
+- CBA_A3
 
-## Development
+## Building
 
 ```bash
+python3 -B -m unittest discover -s tests -p "test_*.py" -v
 hemtt check
 hemtt build --no-bin
-python3 -B -m unittest discover -s tests -p "test_*.py" -v
 ```
 
-Legacy `CfgPatches`, function names, virtual PBO prefixes, and release PBO
-filenames are compatibility contracts and must not change in a patch release.
+The `sania` prefix and existing jammer class names remain unchanged.
 
 ## License
 
-SQF, Arma configuration, and tooling are GPL-2.0-or-later. Original Arma
-models, textures, materials, animations, and audio are APL-SA. See
-[LICENSES.md](LICENSES.md) and closer notices.
+Code and configs use GPL-2.0-or-later. Original models, textures and materials
+use APL-SA. See [LICENSES.md](LICENSES.md).
