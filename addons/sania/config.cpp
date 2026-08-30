@@ -7,9 +7,11 @@ class CfgPatches
         requiredVersion = 2.22;
         version= 1.14;
         requiredAddons[]=
-        {
-            "cba_xeh"
-        };
+		{
+			"cba_common",
+			"cba_settings",
+			"cba_xeh"
+		};
 		author = "sam and DarkBall";
     };
 };
