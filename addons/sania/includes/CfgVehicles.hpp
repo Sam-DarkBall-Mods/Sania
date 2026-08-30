@@ -27,7 +27,7 @@ class CfgVehicles
 		cost = 0;
 		armor = 100;
 		destrType = "DestructDefault";
-		placement = vertical;
+        placement = "vertical";
 		mapSize = 3;
 
 		class UserActions

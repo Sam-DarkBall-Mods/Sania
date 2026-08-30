@@ -26,7 +26,7 @@ private _function = {
     if !(_jammer getVariable ["DB_jammer_isActive", false]) exitWith {};
 
     private _nearUavs = allUnitsUAV select {	
-	    ((_x distance _jammer) < (missionNameSpace getVariable ["DB_Jammer_maxJamDistance", 600])) &&
+	    ((_x distance _jammer) < (missionNamespace getVariable ["DB_Jammer_maxJamDistance", 600])) &&
 	    { alive _x } &&
         { !(isObjectHidden _x) } &&
         { isEngineOn _x } &&

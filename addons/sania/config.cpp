@@ -2,9 +2,9 @@ class CfgPatches
 {
     class sania_antiuav
     {
-        units[]={"Podavitel", "Sania", "Sania_with_tripod", "Volnorez_1", "Volnorez_Bag", "Sania_Crate", "Sania_Bag"};
+        units[]={"Sania", "Sania_with_tripod", "Volnorez_1", "Volnorez_Bag", "Sania_Crate", "Sania_Bag"};
         weapons[]={};
-        requiredVersion= 1.03;
+        requiredVersion = 2.22;
         version= 1.14;
         requiredAddons[]=
         {
